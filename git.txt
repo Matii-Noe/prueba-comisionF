@@ -1,0 +1,64 @@
+Crear e inicializar un repositorio local:
+git init
+
+---------------------------------------------------------------------------
+
+Configuración del nombre de usuario:
+git config --global user.name "John Doe"
+
+Para verificar que valor quedo guardado pueden poner: git config user.name
+
+---------------------------------------------------------------------------
+
+Configuración del email:
+git config --global user.email johndoe@example.com
+
+Para verificar que valor quedo guardado pueden poner: git config user.email 
+
+---------------------------------------------------------------------------
+
+(Al poner --global le indicamos a Git que guarde los cambios de manera global. 
+Por lo tanto se ponen una sola vez)
+
+---------------------------------------------------------------------------
+
+Configuración/vinculación del repositorio local(En VsCode) con el remoto(GitHub)
+git remote add origin http://suUrl
+
+---------------------------------------------------------------------------
+
+Eliminar el vínculo con el repositorio remoto:
+git remote rm origin 
+
+---------------------------------------------------------------------------
+
+Ver repositorio remoto al cual está vinculado mi repositorio local:
+git remote -v
+
+---------------------------------------------------------------------------
+
+Cambiar la URL del repositorio remoto:
+git remote set-url origin Su-Url-De-Repositorio-Remoto
+
+---------------------------------------------------------------------------
+
+Agregar archivos para enviarlos posteriormente:
+git add nombreDelArchivo (Para agregar los cambios de un archivo en particular)
+
+git add . (Para agregar los cambios de todos los archivos)
+
+---------------------------------------------------------------------------
+
+Comentar los cambios, para tener una referencia de lo que hicimos:
+git commit -m "Subiendo mi primer commit"
+
+---------------------------------------------------------------------------
+
+Subir los cambios a mi repositorio remoto(en la rama master/principal):
+git push origin master
+
+---------------------------------------------------------------------------
+
+Para actualizar los cambios cuando trabajamos de manera colaborativa debemos 
+poner el siguiente comando antes de comenzar a trabajar:
+git pull 

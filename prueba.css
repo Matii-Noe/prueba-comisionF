@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    color: blue;
+}
+
+main {
+    display: flex;
+    margin: 3rem 0;
+    justify-content: center;
+}
+
+button {
+    padding: 5px;
+}
+
+button:hover {
+    background-color: blueviolet;
+}
